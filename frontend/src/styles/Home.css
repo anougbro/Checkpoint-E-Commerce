@@ -1,0 +1,163 @@
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #0056b3 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.btn-lg {
+  padding: 15px 40px;
+  font-size: 16px;
+}
+
+/* Categories Section */
+.categories {
+  padding: 60px 20px;
+}
+
+.categories h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: var(--text-color);
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.category-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.category-card h3 {
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+/* Featured Products Section */
+.featured-products {
+  padding: 60px 20px;
+  background-color: var(--light-color);
+}
+
+.featured-products h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: var(--text-color);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Promotions Section */
+.promotions {
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.promo-card {
+  padding: 40px 20px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.promo-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.promo-card p {
+  font-size: 16px;
+}
+
+.promo-card:hover {
+  transform: scale(1.05);
+}
+
+.promo-1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.promo-2 {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.promo-3 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .categories h2,
+  .featured-products h2 {
+    font-size: 24px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .promo-card {
+    padding: 30px 20px;
+  }
+
+  .promo-card h3 {
+    font-size: 18px;
+  }
+}
